@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from AnonX import LOGGER, app, userbot
+from Anonx import LOGGER, app, userbot
 from AnonX.core.call import Anon
 from AnonX.plugins import ALL_MODULES
 from AnonX.utils.database import get_banned_users, get_gbanned
@@ -53,7 +53,7 @@ async def init():
     await Anon.start()
     try:
         await Anon.stream_call(
-            "https://telegra.ph/file/8d5db123638c2f6bb6ce4.mp4"
+            "https://telegra.ph/file/0a199e0834055685278d3.mp4"
         )
     except NoActiveGroupCall:
         LOGGER("AnonX").error(
@@ -63,10 +63,10 @@ async def init():
     except:
         pass
     await Anon.decorators()
-    LOGGER("AnonX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @anonymous_was_bot")
+    LOGGER("AnonX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @unknown_7447")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("AnonX").info("Stopping Music Bot, Bhakk Bhosdike (Gaand Maraa Tu)")
+    LOGGER("AnonX").info("Stopping Music Bot, Bhakk Bhosdike (Apni maa chuda ke Gaand Maraa Tu)")
